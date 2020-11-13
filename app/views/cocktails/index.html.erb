@@ -1,0 +1,24 @@
+
+<div class="container ">
+  <div class="jumbotron text-center" style="">
+    <h1 class="deepshd"> Cocktails</h1>
+  </div>
+
+  <div class="d-flex p-3 justify-content-center">
+    <% @cocktails.each do |cocktail| %>
+
+    <div class="card m-2" style="width: 20rem;">
+      <div class="card-img-caption">
+        <p class="card-text"><%= cocktail.name %></p>
+          <img class="card-img-top" src="http://placehold.it/130x100" alt="Card image cap">
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+
+    <h1>add</h1>
+
+
+</div>
+
