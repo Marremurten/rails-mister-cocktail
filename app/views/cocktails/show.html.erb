@@ -1,12 +1,12 @@
 <div class="container pad20">
 
-  <!-- Heading -->
+
   <h1 class="text-underline"> <%= @cocktail.name %> </h1>
 
-  <!-- Image -->
+
+  <%= cl_image_tag @cocktail.photo.key, crop: :fill %>
 
 
-  <!-- Ingredient heading -->
   <div class="pad10">
     <% if @cocktail.doses.empty? %>
     <p class="text-gray">
@@ -17,7 +17,7 @@
       <% end %>
   </div>
 
-  <!-- Ingredient list -->
+
   <ul class="list-unstyled pad20">
     <% @cocktail.doses.each do |d| %>
     <li>
